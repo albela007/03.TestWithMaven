@@ -13,18 +13,16 @@ public class UnionEmployee extends Employee {
 		this.hoursWorked = hoursWorked;
 	}
 
-	//code = new, code == season
+	// code = new, code == season
 	public UnionEmployee(String code, float yearlySalary, float hoursWorked) throws Exception {
 		super(yearlySalary);
 		this.hoursWorked = hoursWorked;
-		if (hoursWorked > 40 && code.equals("new")){
+		if (hoursWorked > 40 && code.equals("new")) {
 			Exception e = new Exception();
 			throw e;
 		}
 	}
-	
-	
-	
+
 	@Override
 	public float getWeeklySalary() {
 
@@ -36,8 +34,7 @@ public class UnionEmployee extends Employee {
 			othours = this.hoursWorked - 40;
 			otpay = othours * this.getOverTimeHourlyWage();
 			weeklySalary = 40 * super.getHourlyWage() + otpay;
-		}
-		else {
+		} else {
 			weeklySalary = super.getHourlyWage() * this.hoursWorked;
 		}
 

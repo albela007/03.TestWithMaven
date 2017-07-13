@@ -15,21 +15,20 @@ public class DriverSet {
 		set.add("CT");
 		set.add("VA");
 		set.add("FL");
-		
-		
+
 		set.add("NY");
-		
+
 		System.out.println(set.size());
-		
+
 		Set<EmployeeType> emps = new HashSet<>();
-		
+
 		emps.add(new EmployeeType("X", 1000, 2));
 		emps.add(new EmployeeType("X", 1000, 2));
 		emps.add(new EmployeeType("X", 1000, 2));
 		emps.add(new EmployeeType("s", 1000, 2));
-		
+
 		System.out.println(emps.size());
-		
+
 	}
 
 }

@@ -30,7 +30,7 @@ public class SalesTaxListTest {
 
 	@Test
 	public void testShoppingList() {
-		//ShoppingRepository s = new ShoppingRepository();
+		// ShoppingRepository s = new ShoppingRepository();
 		IQuery<String> s = new ShoppingRepository();
 		ArrayList<String> list = s.findAll();
 		int size = list.size();

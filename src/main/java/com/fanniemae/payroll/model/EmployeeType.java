@@ -4,9 +4,9 @@ public class EmployeeType {
 	private String type;
 	private float salary;
 	private float hoursWorked;
-	
+
 	public EmployeeType(String type, float salary, float hoursWorked) {
-	//	super();
+		// super();
 		this.type = type;
 		this.salary = salary;
 		this.hoursWorked = hoursWorked;
@@ -60,8 +60,4 @@ public class EmployeeType {
 		return true;
 	}
 
-	
-	 
-	
-	
 }

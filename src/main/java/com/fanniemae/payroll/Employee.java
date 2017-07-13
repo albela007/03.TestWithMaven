@@ -11,7 +11,7 @@ public abstract class Employee {
 	public float getYearlySalary() {
 		return yearlySalary;
 	}
-	
+
 	public float getWeeklySalary() {
 		return yearlySalary / 52;
 	}
@@ -21,13 +21,14 @@ public abstract class Employee {
 	}
 
 	public float getHourlyWage() {
-		return yearlySalary/(52*40);
-	
+		return yearlySalary / (52 * 40);
+
 	}
-	
-	public float getOverTimeHourlyWage(){
+
+	public float getOverTimeHourlyWage() {
 		return 0;
 	}
+
 	public String toString() {
 		return " Iam an employee that makes " + this.getYearlySalary() + " yearly";
 	}
