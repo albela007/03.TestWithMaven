@@ -35,6 +35,7 @@ public class CityRepository extends AbstractSQLDAO implements IQuery<City> {
 	@Override
 	public City findByKey(String key) {
 		String sql = "select id, name, population from city where id = " +key;
+		
 		super.process(sql);
 		
 		
